@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << "多少錢";
+    float cash = 0;
+    cin >> cash;
+
+    int total = 0;
+
+    cash = 10 * cash;
+
+    while (cash >= 10000){
+        cash = cash - 10000;
+        total++;
+    }
+    while (cash >= 5000){
+        cash = cash - 5000;
+        total++;
+    }
+    while (cash >= 1000){
+        cash = cash - 1000;
+        total++;
+    }
+    while (cash >= 500){
+        cash = cash - 500;
+        total++;
+    }
+    while (cash >= 100){
+        cash = cash - 100;
+        total++;
+    }
+    while (cash >= 50){
+        cash = cash - 50;
+        total++;
+    }
+    while (cash >= 10){
+        cash = cash - 10;
+        total++;
+    }
+    while (cash >= 1){
+        cash = cash - 1;
+        total++;
+    }
+    cout << "總共要拿" << total << "次";
+}
